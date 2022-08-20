@@ -1,4 +1,7 @@
 package workshop3;
+/*
+ * Create hotel class 
+ */
 
 public class Hotel {
 	private String name;
@@ -16,6 +19,16 @@ public class Hotel {
 	public void setRate(int rate) {
 		this.rate = rate;
 	}
+	public Hotel(String name, int rate) {
+		super();
+		this.name = name;
+		this.rate = rate;
+	}
+	@Override
+	public String toString() {
+		return "Hotel [name=" + name + ", rate=" + rate + "]";
+	}
+	
 	
 	
 
